@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		2860091722EFEBA700CE4342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2860091522EFEBA700CE4342 /* Main.storyboard */; };
 		2860091922EFEBA900CE4342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2860091822EFEBA900CE4342 /* Assets.xcassets */; };
 		2860091C22EFEBA900CE4342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2860091A22EFEBA900CE4342 /* LaunchScreen.storyboard */; };
+		2860092422EFF0A500CE4342 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2860092322EFF0A500CE4342 /* InputViewController.swift */; };
+		2860092622EFF0E400CE4342 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2860092522EFF0E400CE4342 /* Todo.swift */; };
 		7F07A36A0A7F36D13F8E41DE /* Pods_RalmTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C038D5971CEEC57A6B3C924 /* Pods_RalmTodo.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		2860091822EFEBA900CE4342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2860091B22EFEBA900CE4342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2860091D22EFEBA900CE4342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2860092322EFF0A500CE4342 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		2860092522EFF0E400CE4342 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		3C038D5971CEEC57A6B3C924 /* Pods_RalmTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RalmTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		766F8E71E4145547BBF53572 /* Pods-RalmTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RalmTodo.release.xcconfig"; path = "Target Support Files/Pods-RalmTodo/Pods-RalmTodo.release.xcconfig"; sourceTree = "<group>"; };
 		869EB256C76B5AA477E922D5 /* Pods-RalmTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RalmTodo.debug.xcconfig"; path = "Target Support Files/Pods-RalmTodo/Pods-RalmTodo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,8 +73,9 @@
 		2860091022EFEBA700CE4342 /* RalmTodo */ = {
 			isa = PBXGroup;
 			children = (
+				2860092822EFF18C00CE4342 /* Objects */,
+				2860092722EFF15000CE4342 /* Controllers */,
 				2860091122EFEBA700CE4342 /* AppDelegate.swift */,
-				2860091322EFEBA700CE4342 /* ViewController.swift */,
 				2860091522EFEBA700CE4342 /* Main.storyboard */,
 				2860091822EFEBA900CE4342 /* Assets.xcassets */,
 				2860091A22EFEBA900CE4342 /* LaunchScreen.storyboard */,
@@ -79,13 +84,29 @@
 			path = RalmTodo;
 			sourceTree = "<group>";
 		};
+		2860092722EFF15000CE4342 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2860091322EFEBA700CE4342 /* ViewController.swift */,
+				2860092322EFF0A500CE4342 /* InputViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2860092822EFF18C00CE4342 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2860092522EFF0E400CE4342 /* Todo.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		FA2963F003BE36FF597C753A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				869EB256C76B5AA477E922D5 /* Pods-RalmTodo.debug.xcconfig */,
 				766F8E71E4145547BBF53572 /* Pods-RalmTodo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -204,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2860092422EFF0A500CE4342 /* InputViewController.swift in Sources */,
 				2860091422EFEBA700CE4342 /* ViewController.swift in Sources */,
 				2860091222EFEBA700CE4342 /* AppDelegate.swift in Sources */,
+				2860092622EFF0E400CE4342 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
